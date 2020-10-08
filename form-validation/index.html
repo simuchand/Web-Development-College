@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <title>Counselling Details</title>
+</head>
+<body>
+    <header>
+        <h1> Application From </h1>
+    </header>
+    <div class="form-container" id="form-container">
+        <h2>Enter Details</h2>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>First Name<span> *</span></label>
+                <input type="text" placeholder="First Name" id="fName">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" id="lName">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Phone Number<span> *</span></label>
+                <input type="text" placeholder="Phone Number" id="mobile">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>E-mail<span> *</span></label>
+                <input type="text" placeholder="E-mail" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Date-of-Birth<span> *</span></label>
+                <input type="date" placeholder="Phone Number" id="dob">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Enter your marks (out of 100)<span> *</span></label>
+                <input
+                        type="number"
+                        placeholder="Math"
+                        value="0"
+                        class="marks" id="math" onchange=checkMark()
+                >
+                <input
+                        type="number"
+                        placeholder="Chemistry"
+                        value="0"
+                        class="marks" id="chem" onchange=checkMark()
+                >
+                <input
+                        type="number"
+                        placeholder="Physics"
+                        value="0"
+                        class="marks" id="phys" onchange=checkMark()
+                >
+            </div>
+
+            <div class="form-control">
+                <input type="number" placeholder="Average Marks" id="avg" disabled onchange=checkMark()>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Select Country<span> *</span></label>
+                <select id="country">
+                    <option value="default" style="color: gray">--Select--</option>
+                    <option value="ind">India</option>
+                    <option value="fore">Foreign</option>
+                </select>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Select State<span> *</span></label>
+                <select id="state">
+                    <option value="default">--Select--</option>
+                    <option value="tn">Tamil Nadu</option>
+                    <option value="ker">Kerala</option>
+                    <option value="kar">Karnataka</option>
+                    <option value="ap">Andra Pradesh</option>
+                    <option value="tl">Telangana</option>
+                </select>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Enter City<span> *</span></label>
+                <input type="text" placeholder="City" id="city">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <div class="form-control">
+                <label>Preferred Course</label>
+                <select id="course">
+                    <option value="default" style="color: gray">--Select--</option>
+                    <option value="cse">B.E Computer Science and Engineering</option>
+                    <option value="it">B.E Information & Technology</option>
+                </select>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>Error Massage</small>
+            </div>
+
+            <button onclick="">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

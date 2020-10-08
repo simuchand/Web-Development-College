@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1bee7;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    display: block;
+    background-color: #ce93d8;
+    align-items: center;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container {
+    width: 50%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: #e1bee7;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px #00000060,
+                -8px -8px 8px #fcfcfc40;
+    overflow: hidden;
+}
+
+.form-container h2 {
+    padding: 0 40px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: #ce93d8;
+    font-size: 30px;
+    color: white;
+}
+
+.form {
+    padding: 0 40px 40px 40px;
+}
+
+.form-control {
+    padding: 10px 0;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 1px;
+    font-family: "Rasa Medium", fantasy;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.form-control span {
+    color: #db3236;
+}
+
+.form-control input {
+    font-size: 15px;
+    width: 98%;
+    height: 50px;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 4px #ce93d880,
+                inset -8px -8px 4px #f3e5f590;
+    color: black;
+}
+
+.form-control .success input {
+    border: #3cba54;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 4px #ce93d880,
+    inset -8px -8px 4px #f3e5f590;
+    color: #3cba54;
+}
+
+.form-control .error input {
+    border-color: #db3236;
+}
+
+.form-control i {
+    position: absolute;
+    padding: 15px 10px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #3cba54;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #db3236;
+    visibility: visible;
+}
+
+.form-control small {
+    position: absolute;
+    font-family: FreeSans, sans-serif;
+    margin: 5px 20px;
+    color: red;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+button {
+    margin: 20px auto 0;
+    width: 98%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Iceberg, monospace ;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    letter-spacing: 30px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 4px #ce93d880,
+                -8px -8px 4px #f3e5f590;
+    color: #3cba54;
+    cursor: pointer;
+}
+
+.form-control .marks {
+    width: 30%;
+    margin-right: 2%;
+}
+
+.form-control select {
+    font-size: 15px;
+    width: 98%;
+    height: 50px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    box-shadow: inset 8px 8px 4px #ce93d880,
+    inset -8px -8px 4px #f3e5f590;
+    color: black;
+}
