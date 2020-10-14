@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div class="content-container">
+    <div class="content">
+        <div class="display-container">
+            <input type="text" id="user-input" class="user-input"/>
+        </div>
+        <div class="number-container">
+            <div class="row">
+                <p id="C select" onclick="calculation('C')" class="symbol" style="color: #db3236">C</p>
+                <p id="operation1" onclick="calculation('R')" class="symbol">R</p>
+                <p id="operation2" onclick="calculation('%')" class="symbol">%</p>
+                <p id="operation3" onclick="calculation('/')" class="symbol">/</p>
+            </div>
+            <div class="row">
+                <p id="7" onclick="displayValue(7)">7</p>
+                <p id="8" onclick="displayValue(8)">8</p>
+                <p id="9" onclick="displayValue(9)">9</p>
+                <p id="operation4" onclick="calculation('x')" class="symbol">x</p>
+            </div>
+            <div class="row">
+                <p id="4" onclick="displayValue(4)" class="select">4</p>
+                <p id="5" onclick="displayValue(5)" class="select">5</p>
+                <p id="6" onclick="displayValue(6)" class="select">6</p>
+                <p id="operation5" onclick="calculation('-')" class="symbol select">-</p>
+            </div>
+            <div class="row">
+                <p id="1" onclick="displayValue(1)" class="select">1</p>
+                <p id="2" onclick="displayValue(2)" class="select">2</p>
+                <p id="3" onclick="displayValue(3)" class="select">3</p>
+                <p id="operation6" onclick="calculation('+')" class="symbol select">+</p>
+            </div>
+            <div class="row">
+                <p id="del" onclick="calculation('del')" class="symbol" style="color: #db3236">Del</p>
+                <p id="0" onclick="displayValue(0)" class="select">0</p>
+                <p id="operation7" onclick="calculation('=')" class="symbol select">=</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
