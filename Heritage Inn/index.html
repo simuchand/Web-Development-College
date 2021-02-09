@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <title>Heritage Inn</title>
+</head>
+<body>
+    <header>
+        <h1>Heritage Inn</h1>
+    </header>
+    <div class="content-container">
+        <div class="content">
+            <p class="p1" style="word-spacing:15px; color:#3cba54">C O M E</p>
+            <p class="p2" style="word-spacing:15px; color:#f4c20d">E N J O Y</p>
+            <p class="p3" style="word-spacing:15px; color:#db3236">E A T</p>
+            <p class="p4" style="word-spacing:15px; color:#4885ed">R E P E A T</p>        
+        </div>
+    </div>
+    <h2 class="sm-title">Reach out to us @</h2>
+    <div class="sm-container">
+        <div class="sm-img">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-4x" style="color:#3b5998"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square fa-4x" style="color:#00acee"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin fa-4x" style="color:#0e76a8"></i></a>
+        </div>
+    </div> 
+    <div class="banner-container">
+        <div class="banners">
+            <img src="banner.png" alt="">
+        </div>       
+    </div>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            We serve
+            <div class="slider">
+                <div class="slider-1">Food</div>
+                <div class="slider-2">Love</div>
+                <div class="slider-3">Care</div>
+            </div> 
+        </div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-title">
+            Menu
+        </div>
+        <div class="menu-list">
+            <table>
+                <tr>
+                    <th>Food</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chicken Chilly</td>
+                    <td>1 plate</td>
+                    <td>100/-</td>
+                </tr>
+                <tr>
+                    <td>Mutton Briyani</td>
+                    <td>1 plate</td>
+                    <td>200/-</td>
+                </tr>
+                <tr>
+                    <td>Chicken Briyani</td>
+                    <td>1 plate</td>
+                    <td>120/-</td>
+                </tr>
+                <tr>
+                    <td>Mushroom Chilly</td>
+                    <td>1 plate</td>
+                    <td>80/-</td>
+                </tr>
+                <tr>
+                    <td>Veg Fried Rice</td>
+                    <td>1 plate</td>
+                    <td>80/-</td>
+                </tr>
+                <tr>
+                    <td>Egg Fried Rice</td>
+                    <td>1 plate</td>
+                    <td>90/-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+     <div class="suggest-container">
+         <input type="text" class="user-input"
+                placeholder="Your seggestions"/>
+    </div>
+    <div class="like-container">
+        <div class="like-img">
+            <i id="like" class="far fa-thumbs-up fa-3x" style="color:#000" ></i>
+            <i id="dislike" class="far fa-thumbs-down fa-3x" style="color:#000"></i>
+        </div>
+    </div>
+    <script>
+        console.log("inside");
+        const like = document.querySelector(".fa-thumbs-up");
+        const dislike = document.querySelector(".fa-thumbs-down");
+        like.addEventListener("click", function(){
+            like.style.color="#3cba54";
+            dislike.style.color="#000";
+        })
+        dislike.addEventListener("click", function(){
+            dislike.style.color="#db3236";
+            like.style.color="#000"
+        })
+    </script>
+</body>
+</html>

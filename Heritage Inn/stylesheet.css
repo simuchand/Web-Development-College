@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 700;
+    color: #555;
+    background-color: #ecf0f3;
+    overflow-x: hidden;
+}
+
+header {
+    height: 110px;
+    width: 100vw;
+    padding: 20px 0;
+    margin: auto;
+}
+
+
+header h1 {
+    margin: 0 auto;
+    width: 80vw;
+    font-size: 3.5em;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: #90a4ae;
+    letter-spacing: 20px;
+    padding: 20px 100px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+    inset -8px -8px 8px #ffffff;
+}
+
+header:hover {
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 50px;
+    margin-top: 100px;
+}
+
+.content {
+    width: 50vw;
+    background: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff;
+    transition: 2.5s ease-in-out;
+}
+
+.content:hover {
+    box-shadow: inset 5px 5px 10px #ffffff,
+    inset 0 0 10px #cbced1;
+    transition: 2.5s ease-in-out;
+}
+
+.content p {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.content p:hover {
+    background: #cfd8dc;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sm-title {
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 10px 0;
+}
+
+.sm-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
+.sm-container a {
+    padding: 0 50px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfd8dc;
+    padding: 50px 0;
+}
+
+.banners img {
+    box-shadow: 12px 12px 12px #1e1e1e50,
+    -8px -8px 8px #fcfcf0;
+    width: 80vw;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.slider-wrapper {
+
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider div {
+    color: #fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+}
+
+.slider {
+    padding-left: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slider-1 {
+    background-color: #3cba54;
+    animation: slide 5s linear infinite;
+}
+
+.slider-2 {
+    background-color: #f4c20d;
+}
+
+.slider-3 {
+    background-color: #db3236;
+}
+
+.slider-4 {
+    background-color: #4885ed;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -300px;
+    }
+    5% {
+        margin-top: -200px;
+    }
+    33% {
+        margin-top: -200px;
+    }
+    38% {
+        margin-top: -100px;
+    }
+    66% {
+        margin-top: -100px;
+    }
+    71% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.menu-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 20px 70px;
+    border-radius: 20px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff;
+}
+
+.menu-title {
+    color: #90a4ae;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.menu-list table {
+    width: 100%;
+    padding: 75px;
+}
+
+.menu-list tr, td, th {
+    padding: 20px 0;
+}
+
+.menu-list th {
+    text-align: left;
+    font-weight: bolder;
+    color: #3cba54;
+    font-size: 25px;
+}
+
+hr {
+    height: 4px;
+    width: 90%;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.suggest-container {
+    display: flex;
+    padding: 0px 20px;
+    margin: 30px 100px;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 4px #cbced1,
+    inset -4px -4px 4px #ffffff;
+}
+
+.suggest-container input {
+    height: 50px;
+    width: 80vw;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 25px;
+    color: #555;
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-img i {
+    padding: 0px 25px;
+    margin-bottom: 20px;
+}
+
+.like-img .fa-thumbs-up:hover {
+    cursor: pointer;
+    color: #3cba54;
+}
+
+.like-img .fa-thumbs-down:hover {
+    cursor: pointer;
+    color: #db3236;
+}
+ 
